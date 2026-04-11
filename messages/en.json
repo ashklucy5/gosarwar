@@ -1,0 +1,48 @@
+{
+  "nav": { "home": "Home", "services": "Services", "works": "Works", "about": "About", "team": "Team", "contact": "Contact", "bookDemo": "Book a Demo" },
+   "hero": {
+    "tagline": "Increase your sales",
+    "titleStart": "Grow your ",
+    "titleHighlight": "digital business",
+    "titleMiddle": " with us & make ",
+    "titleEnd": "Success",
+    "cta": "Get Start a Project",
+    "teamCard": { "title": "The most expeience team we have for you." },
+    "stats": {
+      "servicesTitle": "Business Services",
+      "servicesBadge": "10+ Services",
+      "revenueTitle": "Total Revenue",
+      "helped": "Freelancer & Business Helped"
+    },
+    "servicesList": ["SEO", "Graphic Design", "PPC", "Virtual Assistant", "Social Media Marketing", "Content Marketing", "Web Design"],
+    "trust": { "text": "Trusted by 50,000+ teams to communicate easily" },
+    "features": {
+      "seo": { "title": "SEO", "desc": "Optimization for search engines." },
+      "design": { "title": "Graphic Design", "desc": "Creative visual solutions." },
+      "marketing": { "title": "PPC", "desc": "Pay per click campaigns." }
+    }
+  },
+  "carousel": { "title": "Our Works", "subtitle": "Trusted by 50,000+ teams to communicate easily" },
+  "services": {
+    "title": "Business Services",
+    "subtitle": "We provide a wide range of digital services to help your business grow.",
+    "items": {
+      "seo": { "title": "SEO Optimization", "desc": "Improve your search rankings and drive organic traffic." },
+      "design": { "title": "UI/UX Design", "desc": "Beautiful interfaces designed for maximum user engagement." },
+      "marketing": { "title": "Digital Marketing", "desc": "Strategic campaigns that convert visitors into customers." },
+      "ecommerce": { "title": "E-Commerce", "desc": "Robust online stores built to maximize sales." },
+      "analytics": { "title": "Analytics", "desc": "Data-driven insights to help you make better decisions." },
+      "support": { "title": "24/7 Support", "desc": "Dedicated team ready to help you whenever you need." }
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "We are a group of passionate individuals working together.",
+    "members": { "CEO": "Alex Johnson", "CTO": "Sarah Lee", "Designer": "Mike Chen", "Dev Lead": "David Kim" }
+  },
+    "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}

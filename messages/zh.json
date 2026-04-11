@@ -1,0 +1,49 @@
+{
+  "nav": { "home": "首页", "services": "服务", "works": "作品", "about": "关于", "team": "团队", "contact": "联系", "bookDemo": "预约演示" },
+  "hero": {
+    "tagline": "提升您的销售额",
+    "titleStart": "与我们一起发展",
+    "titleHighlight": "数字业务",
+    "titleMiddle": "并取得",
+    "titleEnd": "成功",
+    "cta": "开始项目",
+    "teamCard": { "title": "我们为您配备经验最丰富的团队。" },
+    "stats": {
+      "servicesTitle": "业务服务",
+      "servicesBadge": "10+ 项服务",
+      "revenueTitle": "总收入",
+      "helped": "已帮助的 freelancer 与企业"
+    },
+    "servicesList": ["搜索引擎优化", "平面设计", "点击付费", "虚拟助理", "社交媒体营销", "内容营销", "网页设计"],
+    "trust": { "text": "超过 50,000+ 团队信赖我们" },
+    "features": {
+      "seo": { "title": "SEO", "desc": "搜索引擎优化。" },
+      "design": { "title": "平面设计", "desc": "创意视觉解决方案。" },
+      "marketing": { "title": "点击付费", "desc": "点击付费广告活动。" }
+    }
+},
+  
+  "carousel": { "title": "我们的作品", "subtitle": "超过 50,000+ 团队信赖我们" },
+  "services": {
+    "title": "业务服务",
+    "subtitle": "我们提供广泛的数字服务以助您的业务增长。",
+    "items": {
+      "seo": { "title": "搜索引擎优化", "desc": "提升搜索排名，驱动自然流量。" },
+      "design": { "title": "UI/UX 设计", "desc": "专为最大化用户参与度而设计的精美界面。" },
+      "marketing": { "title": "数字营销", "desc": "将访客转化为客户的战略性广告活动。" },
+      "ecommerce": { "title": "电子商务", "desc": "旨在最大化销售额的强大在线商店。" },
+      "analytics": { "title": "数据分析", "desc": "数据驱动的洞察，助您做出更明智的决策。" },
+      "support": { "title": "全天候支持", "desc": "专业团队随时为您提供帮助。" }
+    }
+  },
+  "team": {
+    "title": "认识我们的团队",
+    "subtitle": "我们是一群充满激情的个人，共同努力。",
+    "members": { "CEO": "Alex Johnson", "CTO": "Sarah Lee", "Designer": "Mike Chen", "Dev Lead": "David Kim" }
+  },
+    "notFound": {
+    "title": "页面未找到",
+    "message": "您查找的页面不存在或已被移动。",
+    "backHome": "返回首页"
+  }
+}
