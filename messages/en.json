@@ -44,5 +44,27 @@
     "title": "Page Not Found",
     "message": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Who We Are",
+    "subtitle": "We are a team of passionate creators, developers, and strategists dedicated to building digital experiences that matter.",
+    "heading": "We blend creativity with data to help your business grow exponentially.",
+    "description": "At GoSarwar, we believe that great design is more than just aesthetics. It's about solving problems, connecting with audiences, and delivering measurable results. Our approach combines artistic vision with technical precision.",
+    "features": {
+      "strategy": { "title": "Creative Strategy", "desc": "Innovative approaches to stand out in the market." },
+      "growth": { "title": "Data Driven", "desc": "Decisions backed by analytics and real user insights." },
+      "team": { "title": "Expert Team", "desc": "Skilled professionals passionate about technology." },
+      "secure": { "title": "Secure & Reliable", "desc": "Robust solutions you can trust with your data." }
+    },
+    "stats": {
+      "cardTitle": "Our Impact",
+      "value1": "150+",
+      "label1": "Projects Done",
+      "value2": "98%",
+      "label2": "Client Satisfaction"
+    }
   }
+
+
 }

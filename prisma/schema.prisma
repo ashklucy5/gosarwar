@@ -1,0 +1,40 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+}
+
+model HeroContent {
+  id             String   @id @default(cuid())
+  tagline        String
+  titleStart     String
+  titleHighlight String
+  titleMiddle    String
+  titleEnd       String
+  ctaText        String
+  imageUrl       String?
+  servicesList   Json?    // Stores string[]
+  updatedAt      DateTime @updatedAt
+}
+
+model TeamMember {
+  id        String   @id @default(cuid())
+  name      String
+  role      String
+  imageUrl  String
+  linkedin  String?
+  twitter   String?
+  sortOrder Int      @default(0)
+  updatedAt DateTime @updatedAt
+}
