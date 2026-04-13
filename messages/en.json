@@ -1,6 +1,6 @@
 {
   "nav": { "home": "Home", "services": "Services", "works": "Works", "about": "About", "team": "Team", "contact": "Contact", "bookDemo": "Book a Demo" },
-   "hero": {
+  "hero": {
     "tagline": "Increase your sales",
     "titleStart": "Grow your ",
     "titleHighlight": "digital business",
@@ -40,7 +40,7 @@
     "subtitle": "We are a group of passionate individuals working together.",
     "members": { "CEO": "Alex Johnson", "CTO": "Sarah Lee", "Designer": "Mike Chen", "Dev Lead": "David Kim" }
   },
-    "notFound": {
+  "notFound": {
     "title": "Page Not Found",
     "message": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
@@ -65,6 +65,4 @@
       "label2": "Client Satisfaction"
     }
   }
-
-
 }

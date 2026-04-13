@@ -1,33 +1,57 @@
-'use client';
-import { signIn } from 'next-auth/react';
-import { useState } from 'react';
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import { login } from "./actions";
 
-export default function LoginPage() {
-  const [error, setError] = useState('');
-  
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const res = await signIn('credentials', { 
-      email: fd.get('email'), 
-      password: fd.get('password'),
-      redirect: false 
-    });
-    if (res?.error) setError('Invalid credentials');
-    else window.location.href = '/admin';
-  }
+export default async function LoginPage({ searchParams }: { searchParams: { error?: string } }) {
+  // If already logged in, go to dashboard
+  const session = await auth();
+  if (session) redirect("/admin");
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-sm space-y-4">
-        <h2 className="text-2xl font-bold text-center text-violet-700">Admin Login</h2>
-        {error && <p className="text-red-500 text-sm text-center">{error}</p>}
-        <input name="email" type="email" placeholder="Email" required className="input" />
-        <input name="password" type="password" placeholder="Password" required className="input" />
-        <button type="submit" className="w-full bg-violet-600 text-white py-2.5 rounded-lg hover:bg-violet-700 font-medium">
-          Sign In
-        </button>
-      </form>
+      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-100">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-bold text-gray-900">Admin Login</h1>
+          <p className="text-gray-500 text-sm mt-2">Enter your credentials to access the dashboard</p>
+        </div>
+
+        {searchParams.error && (
+          <div className="bg-red-50 text-red-600 p-3 rounded-lg mb-6 text-sm text-center border border-red-100">
+            Invalid email or password. Please try again.
+          </div>
+        )}
+
+        <form action={login} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input 
+              name="email" 
+              type="email" 
+              required 
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition"
+              placeholder="admin@gosarwar.com"
+            />
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <input 
+              name="password" 
+              type="password" 
+              required 
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent outline-none transition"
+              placeholder="••••••••"
+            />
+          </div>
+
+          <button 
+            type="submit" 
+            className="w-full bg-violet-600 text-white py-2.5 rounded-lg hover:bg-violet-700 font-medium transition shadow-sm"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

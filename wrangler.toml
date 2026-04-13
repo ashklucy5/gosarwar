@@ -1,0 +1,13 @@
+name = "gosarwar"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = ".open-next"
+
+# Native R2 binding (Cloudflare injects this into process.env)
+[[r2_buckets]]
+binding = "GOSARWAR_IMAGES"
+bucket_name = "gosarwar-images"
+
+[vars]
+MONGODB_URI = "placeholder"
+AUTH_SECRET = "placeholder"
+NEXT_PUBLIC_APP_URL = "https://gosarwar.pages.dev"

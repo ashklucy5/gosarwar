@@ -34,7 +34,7 @@ const Bubbles = () => {
   );
 };
 
-export default function Hero() {
+export default function Hero({ data }: { data?: any }) {
   const t = useTranslations('hero');
   const services = t.raw('servicesList') as string[];
 

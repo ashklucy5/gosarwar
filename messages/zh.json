@@ -21,8 +21,7 @@
       "design": { "title": "平面设计", "desc": "创意视觉解决方案。" },
       "marketing": { "title": "点击付费", "desc": "点击付费广告活动。" }
     }
-},
-  
+  },
   "carousel": { "title": "我们的作品", "subtitle": "超过 50,000+ 团队信赖我们" },
   "services": {
     "title": "业务服务",
@@ -41,7 +40,7 @@
     "subtitle": "我们是一群充满激情的个人，共同努力。",
     "members": { "CEO": "Alex Johnson", "CTO": "Sarah Lee", "Designer": "Mike Chen", "Dev Lead": "David Kim" }
   },
-    "notFound": {
+  "notFound": {
     "title": "页面未找到",
     "message": "您查找的页面不存在或已被移动。",
     "backHome": "返回首页"

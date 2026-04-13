@@ -1,19 +1,22 @@
+// next.config.mjs (PROJECT ROOT)
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./lib/i18n.ts');
+const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize external images
+  turbopack: {},
+  output: 'standalone', // For Cloudflare Pages
   images: {
-    remotePatterns: [
-      { protocol: 'https', hostname: 'i.pravatar.cc' },
-      { protocol: 'https', hostname: 'picsum.photos' },
-      { protocol: 'https', hostname: 'images.unsplash.com' },
-    ],
+    remotePatterns: [{ hostname: 'pub-*.r2.dev' }],
+    unoptimized: true, // Workers don't support next/image optimizer
+  },
+  experimental: {
+    serverActions: { bodySizeLimit: '10mb' },
   },
   reactStrictMode: true,
-  compress: true,
+  poweredByHeader: false,
+  // ❌ REMOVE the i18n block - next-intl handles routing via plugin
 };
 
 export default withNextIntl(nextConfig);
